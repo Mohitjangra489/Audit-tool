@@ -1,0 +1,31 @@
+.mainContainer{
+
+}
+.DashboardCard_container{
+    display: flex; 
+    width: 37rem;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    cursor: pointer;
+}
+
+.DashboardCard_container:hover{
+    scale: 1.05;
+    transition: 0.2s ease-in-out;
+}
+.DashboardCard_container_titlediv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+    letter-spacing: 1px;
+}
+.cards_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 14px 0px 14px 0px;
+    background-color: #e7e8e9;
+}

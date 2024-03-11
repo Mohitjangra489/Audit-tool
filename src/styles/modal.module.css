@@ -1,0 +1,42 @@
+.modal_backgroundDiv{
+position: fixed;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background: #808080b0;
+}
+
+.modal_mainDiv{
+    position: fixed;
+    background: white;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40rem;
+    padding: 30px;
+    box-shadow: 0px 0px 15px 6px #8d8b8b;
+    border-radius: 5px;
+}
+.modal_btnDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   margin-top: 20px;
+}
+.Btn{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 9px;
+    cursor: pointer;
+
+}
+.Btn:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-sizing: border-box;
+}

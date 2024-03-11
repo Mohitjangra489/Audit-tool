@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.BodyContainer{
+    height: 100%;
+    width: 100%;
+}
+
+.BackgroundImageDiv{
+    height: 550px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    height: calc(100vh - 80px);
+
+}
+
+.BackgroundImage{
+    width: 100%;
+    height: inherit;
+    filter: brightness(0.3);
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+}
+.firstdiv{
+    height: calc(100vh - 80px);
+    width: 100%;
+    color: white;
+    /* align-items: center; */
+    display: flex;
+    justify-content: center;
+    padding: 0px 10px;
+}
+.firstdiv_data{
+    margin-top: 100px;
+    text-align: center;
+    width: 50%;
+    font-weight: 700;
+}
+.seconddiv{
+    width: 100%;
+    height: 100%;
+    padding: 70px 40px 70px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.seconddiv_carddiv{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.seconddiv_carddiv_card{
+    height: 20rem;
+    width: 35rem;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+}
+.seconddiv_carddiv_card:hover{
+    background-color: #070f27;
+    color: white;
+    transition: 0.4s ease-in;
+    border-radius: 5px;
+    box-shadow: 4px 4px 23px 8px #d1cdcd;;
+}
+.thirddiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    gap: 20px   ;
+    background-color: #070f27;
+    color: white;
+    padding: 2rem 8rem 2rem 8rem;
+}
+.thirddiv_image{
+    height:38rem;
+}
+.thirddiv_rightdiv{
+    line-height: 1.6;
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+    text-align: justify;
+}
+.fourthdiv{
+    width: 100%;
+    background-color: #ecf1f7 ;
+    display: flex;
+    flex-direction: column;
+    padding: 56px 0px 56px 0px;
+    align-items: center;
+}
+.fourthdiv_cardcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 40px;
+    justify-content: center;
+    gap: 13rem;
+}
+.fourthdiv_carddiv{
+    height: 30rem;
+    width: 36rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+    padding: 30px;
+}
+.fourthdiv_carddiv:hover{
+    background-color: white;
+    transition: 0.3s ease-in;
+    border-radius: 5px;
+}
+.fourthdiv_cardimage{
+    height: 60px;
+    width: 60px;
+}
+.cardpara{
+    color: #7b7b93;
+    margin-bottom: 0;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.welcomespan1{
+    font-size: 2rem;
+}
+.welcomespan2{
+    font-size: 4rem;
+}
+.welcomespan3{
+    font-size: 3rem;
+}
+.welcomespan4{
+    font-size: 4rem;
+    font-weight: 600;
+}
+.welcomespan5{
+    font-size: 2rem;
+    color: #7d7d7d;
+}
+
+
+@media screen and (max-width:500px) {
+    .welcomespan1{
+        font-size: 1.5rem;
+    }
+    .welcomespan2{
+        font-size: 2.5rem;
+    }
+    .welcomespan3{
+        font-size: 1.8rem;
+    }
+    .welcomespan4{
+        font-size: 3rem;
+    }
+    .welcomespan5{
+        font-size: 1.6rem;
+    }
+   .firstdiv_data{
+    width: 100%;
+   }
+   .seconddiv_carddiv{
+    flex-direction: column;
+    gap: 60px;
+   }
+   .seconddiv_carddiv_card{
+    height: auto;
+    width: 100%;
+   }
+   .thirddiv{
+    flex-direction: column;
+   }
+   .thirddiv_image{
+    height: 20rem;
+   }
+   .thirddiv_rightdiv{
+    text-align: center;
+   }
+   .fourthdiv_cardcontainer{
+    gap: 6rem;
+
+   }
+   .fourthdiv_carddiv{
+    height: auto;
+    width: 100%;
+   }
+        
+    }

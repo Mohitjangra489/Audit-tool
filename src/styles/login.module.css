@@ -1,0 +1,111 @@
+/* .svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.login_label_image__bpBvk.css-i4bv87-MuiSvgIcon-root {
+    width: 2.5rem;
+    height: 2.5rem;
+} */
+
+.BackgroundImageDiv {
+    height: 550px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    height: calc(100vh - 80px);
+
+}
+
+.BackgroundImage {
+    width: 100%;
+    height: inherit;
+    filter: brightness(0.3);
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.login_mainContainer {
+    height: calc(100vh - 80px);
+    width: 100%;
+    
+}
+
+.login_form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login_form_container {
+    width: 30%;
+    padding: 30px;
+    color: white;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.label_div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.label_div_div{
+    display: flex;
+    align-items: end;
+    gap: 5px;
+}
+.label_div_heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.label_image{
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+}
+
+.input {
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid grey;
+    letter-spacing: 1px;
+
+}
+.input::placeholder{
+    letter-spacing: 1px;
+}
+
+
+.label {
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1.9rem;
+    /* font-weight: 700; */
+}
+
+.submitbtn {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    color: white;
+    background: #070f27;
+    cursor: pointer;
+}
+.submitbtn:hover{
+    scale: 1.03;
+    transition: 0.5s ease-in-out    ;
+
+}

@@ -53,10 +53,29 @@
     justify-content: center;
 
 }
+.linkli{
+    cursor: pointer;
+}
+.linkli:hover{
+
+    color: #1cbfff;
+}
 .logindiv{
     border: 1px solid white;
     padding: 5px;
 }
+.logindiv:hover{
+    border:1px solid #1cbfff;
+}
+
+.loginlink{
+    color: white;
+    text-decoration: none;
+}
+.loginlink:hover{
+color: #1cbfff;
+}
+
 
 @media screen and (max-width:500px) {
 .linksdiv{

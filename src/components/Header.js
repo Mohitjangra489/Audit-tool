@@ -19,7 +19,7 @@ const Header = () => {
                 </div>
             </div>
 
-            <div className={HeaderCss.logindiv}> <Link to={`/login`} style={{color:"white",textDecoration:"none"}}  >Login</Link></div>
+            <div className={HeaderCss.logindiv}> <Link to={`/login`}   className={HeaderCss.loginlink}>Login</Link></div>
 
         </div>
     )

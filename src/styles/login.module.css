@@ -109,3 +109,9 @@
     transition: 0.5s ease-in-out    ;
 
 }
+
+@media screen and (max-width:500px) {
+    .login_form_container{
+        width: 100%;
+    }
+}

@@ -10,23 +10,30 @@ import Graph2 from '../images/Slide132-4 (1).png';
 import Modal from '../components/Modal';
 
 const DashboardMainpage = () => {
-    const [isModalOpen,setisModalOpen]=useState(false);
-    const [modalData,setmodalData]=useState("");
+  const [isModalOpen, setisModalOpen] = useState(false);
+  const [modalData, setmodalData] = useState("");
+
+  const fetchData=async()=>{
+     const response= await fetch("https://vocal-orbit-416106.de.r.appspot.com/api/v1/check").then((res)=>{return res.text()}).then((data)=>{alert(data)});
+  }
 
 
-  return (  
+  return (
     <div className={Css.mainContainer}>
-     { isModalOpen && <Modal setisModalOpen={setisModalOpen} modalData={modalData} />}  
-    <div className={Css.cards_div}>
-    <DashboardCard  color={`#0022ff`} src={DeliveryTruck} title={`Shipping`} value={`18`}  setisModalOpen={setisModalOpen} setmodalData={setmodalData} />
-    <DashboardCard  color={`#9fe01b`} src={Cart} title={`New Orders`} value={`54`} setisModalOpen={setisModalOpen} setmodalData={setmodalData}/>
-    <DashboardCard  color={`#9c27b0`} src={Issue} title={`Return Issues`} value={`345`} setisModalOpen={setisModalOpen} setmodalData={setmodalData}/>
-    <DashboardCard  color={`#ff0000`} src={Problem} title={`Problem Invoices`} value={`2`} setisModalOpen={setisModalOpen} setmodalData={setmodalData}/>
-    </div>
-    <div style={{paddingTop:"80px"}}>
-        <img src={Graph} alt='graph_here'/>
-        <img src={Graph2} alt='graph_here' style={{width:"50%"}}/>
+      {isModalOpen && <Modal setisModalOpen={setisModalOpen} modalData={modalData} />}
+      <div className={Css.cards_div}>
+        <DashboardCard color={`#0022ff`} src={DeliveryTruck} title={`Shipping`} value={`18`} setisModalOpen={setisModalOpen} setmodalData={setmodalData} />
+        <DashboardCard color={`#9fe01b`} src={Cart} title={`New Orders`} value={`54`} setisModalOpen={setisModalOpen} setmodalData={setmodalData} />
+        <DashboardCard color={`#9c27b0`} src={Issue} title={`Return Issues`} value={`345`} setisModalOpen={setisModalOpen} setmodalData={setmodalData} />
+        <DashboardCard color={`#ff0000`} src={Problem} title={`Problem Invoices`} value={`2`} setisModalOpen={setisModalOpen} setmodalData={setmodalData} />
+      </div>
+      <div >
+        <button className={Css.fetchbtn} onClick={fetchData}>Fetch data from server</button>
         </div>
+      <div style={{ paddingTop: "80px" }}>
+        <img src={Graph} alt='graph_here' />
+        <img src={Graph2} alt='graph_here' style={{ width: "50%" }} />
+      </div>
     </div>
   )
 }

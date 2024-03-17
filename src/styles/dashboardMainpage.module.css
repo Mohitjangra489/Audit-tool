@@ -29,3 +29,14 @@
     padding: 14px 0px 14px 0px;
     background-color: #e7e8e9;
 }
+.fetchbtn{
+    border: none;
+    padding: 10px;
+    color: white;
+    background: black;
+    margin: 20px;
+    cursor: pointer;
+}
+.fetchbtn:hover{
+    color: #1cbfff;
+}
